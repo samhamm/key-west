@@ -9,7 +9,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var publixIcon = L.icon({
     iconUrl: 'publix-marker.png',
-    iconSize: [50, 50], // size of the icon
+    iconSize: [25, 25], // size of the icon
     iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
     popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
