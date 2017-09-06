@@ -1,3 +1,5 @@
+document.getElementById('mapid').style.height = window.innerHeight + 'px';
+
 var mymap = L.map('mapid').setView([24.553588, -81.794391], 15);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
