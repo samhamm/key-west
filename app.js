@@ -11,13 +11,41 @@ var publixIcon = L.icon({
     iconUrl: 'publix-marker.png',
     iconSize: [25, 25], // size of the icon
     iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
-    popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [-12, -25] // point from which the popup should open relative to the iconAnchor
 });
 
-const hemingway = L.marker([24.5512044, -81.8006155]).addTo(mymap);
+var catIcon = L.icon({
+    iconUrl: 'kitteh.png',
+    iconSize: [35, 35], // size of the icon
+    iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    popupAnchor: [-12, -25] // point from which the popup should open relative to the iconAnchor
+});
+
+var dogIcon = L.icon({
+    iconUrl: 'dog.png',
+    iconSize: [35, 35], // size of the icon
+    iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    popupAnchor: [-12, -25] // point from which the popup should open relative to the iconAnchor
+});
+
+var pieIcon = L.icon({
+    iconUrl: 'pie.png',
+    iconSize: [35, 35], // size of the icon
+    iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    popupAnchor: [-12, -25] // point from which the popup should open relative to the iconAnchor
+});
+
+var tigerIcon = L.icon({
+    iconUrl: 'tiger.png',
+    iconSize: [35, 35], // size of the icon
+    iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+    popupAnchor: [-12, -25] // point from which the popup should open relative to the iconAnchor
+});
+
+const hemingway = L.marker([24.5512044, -81.8006155], { icon: catIcon }).addTo(mymap);
 hemingway.bindPopup("<b>Hemiingway House</b><br>907 Whitehead").openPopup();
 
-const banana = L.marker([24.5488161, -81.797366]).addTo(mymap);
+const banana = L.marker([24.5488161, -81.797366], { icon: pieIcon }).addTo(mymap);
 banana.bindPopup("<b>Banana Cafe</b><br>1215 Duval").openPopup();
 
 const publix1 = L.marker([24.5659704, -81.7705233], { icon: publixIcon }).addTo(mymap);
@@ -29,13 +57,13 @@ publix2.bindPopup("<b>Publix</b><br>3316 N Roosevelt Blvd").openPopup();
 const bealls = L.marker([24.563204, -81.77625]).addTo(mymap);
 bealls.bindPopup("<b>Beall's Outlet</b><br>2506 N Roosevelt Blvd").openPopup();
 
-const tiger = L.marker([24.552809, -81.7887]).addTo(mymap);
+const tiger = L.marker([24.552809, -81.7887], { icon: tigerIcon }).addTo(mymap);
 tiger.bindPopup("<b>Tiger!</b><br>1300 White").openPopup();
 
 const mallory = L.marker([24.559027, -81.807014]).addTo(mymap);
 mallory.bindPopup("<b>Mallory Square</b><br>400 Wall").openPopup();
 
-const higgs = L.marker([24.5477945, -81.7870587]).addTo(mymap);
+const higgs = L.marker([24.5477945, -81.7870587], { icon: dogIcon }).addTo(mymap);
 higgs.bindPopup("<b>Higgs Beach Dog Park</b><br>100 Atlantic Blvd").openPopup();
 
 const rental = L.marker([24.553588, -81.792197]).addTo(mymap);
